@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "C#: Ex56",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}\\Ex56\\Ex56.csproj",
+            "launchConfigurationId": "TargetFramework=;Ex56"
+        }
+    ]
+}

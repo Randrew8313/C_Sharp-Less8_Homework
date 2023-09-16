@@ -70,9 +70,9 @@ int[,] MultiplicationMatrix(int[,] matr1, int[,] matr2)
     return resMatrix;
 }
 
-int row1 = SetNumber("Введите размер первой матрицы: ");
+int row1 = SetNumber("Введите размер матриц: ");
 int col1 = row1;
-int row2 = SetNumber("Введите размер второй матрицы: ");
+int row2 = row1;
 int col2 = row2;
 
 int[,] martix1 = GetRandArray(row1, col1);

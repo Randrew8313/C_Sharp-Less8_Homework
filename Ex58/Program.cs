@@ -70,42 +70,14 @@ int[,] MultiplicationMatrix(int[,] matr1, int[,] matr2)
     return resMatrix;
 }
 
-bool CheckMatrixes(int row, int col)
-{
-    if(col != row)
-    {
-        Console.WriteLine("Умножение матриц не возможно.");
-        Console.WriteLine("Две матрицы можно перемножить между собой тогда и только тогда,");
-        Console.WriteLine(" когда количество столбцов первой матрицы равно количеству строк второй матрицы.");
-        
-        
-        return true;
-    }
-    return false;
-}
-
-
-bool checkArray;
-int row1;
-int col1;
-int row2;
-int col2;
-do
-{
-
-row1 = SetNumber("Введите количество строк первой матрицы: ");
-col1 = SetNumber("Введите количество столбцов первой матрицы: ");
-row2 = SetNumber("Введите количество строк второй матрицы: ");
-col2 = SetNumber("Введите количество столбцов второй матрицы: ");
-    checkArray = CheckMatrixes(row2, col1);
-}
-while(checkArray == true);
+int row1 = SetNumber("Введите размер первой матрицы: ");
+int col1 = row1;
+int row2 = SetNumber("Введите размер второй матрицы: ");
+int col2 = row2;
 
 int[,] martix1 = GetRandArray(row1, col1);
 int[,] martix2 = GetRandArray(row2, col2);
 
-// int[,] martix1 = new int[,] {{1,2}, {3,4}};
-// int[,] martix2 = new int[,] {{5,6}, {7,8}};
 PrintArray(martix1);
 Console.WriteLine();
 PrintArray(martix2);
